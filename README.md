@@ -2,11 +2,14 @@ Team First
 ==========
 
 Team First helps you as a developer to be more responsive to github
-notifications. When working apart of a development team, it is important to be attentive and quick to respond to requests from the team, because in many cases they are blocked until you do.
+notifications. When working apart of a development team, it is important to be
+attentive and quick to respond to requests from the team, because in many
+cases they are blocked until you do.
 
 This is accomplished by using a simple python script in a git hook to check if
 you having any unread github notifications and fail the hook if you do. This
-forces you to not be able to ignore your teammates.
+forces you to not be able to ignore your teammates (although git's
+`--no-verify` can override this in emergencies).
 
 ## Features
 
@@ -21,7 +24,8 @@ forces you to not be able to ignore your teammates.
    new token that only has notifications permissions.
 1. Install [python requests](http://docs.python-requests.org/en/master/)
 1. Create a [git
-   hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) (`pre-push` or `pre-commit` are recommended) that runs `teamfirst.py`
+   hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) (`pre-push`
+or `pre-commit` are recommended) that runs `teamfirst.py`
 
 ## Command line options
 
