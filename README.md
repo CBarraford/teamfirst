@@ -11,7 +11,7 @@ forces you to not be able to ignore your teammates.
 ## Features
 
  * specify a single github repo to check for notifications
- * only check participating notifications
+ * only check for participating notifications
  * automatically open a browser to github notifications if there are unread
    notifications
 
@@ -19,8 +19,8 @@ forces you to not be able to ignore your teammates.
 ## Setup
 1. Goto [github tokens page](https://github.com/settings/tokens), and create a
    new token that only has notifications permissions.
-1. Create a git hook (`pre-push` or `pre-commit` are recommended) that runs
-   `teamfirst.py`
+1. Create a [git
+   hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) (`pre-push` or `pre-commit` are recommended) that runs `teamfirst.py`
 
 ## Command line options
 
@@ -35,5 +35,5 @@ optional arguments:
                         Github oauth token (ie XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)
   -r REPO, --repo REPO  Github repo (ie cbarraford/teamfirst)
   -p, --participating   Only participating github notifications
-  -o, --open            Launch browser if notifications are waiting
+  -o, --open            Launch browser if there are unread notifications
 ```
