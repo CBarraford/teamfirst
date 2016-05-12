@@ -27,7 +27,7 @@ forces you to not be able to ignore your teammates.
 ```
 usage: teamfirst.py [-h] [-t TOKEN] [-r REPO] [-p] [-o]
 
-Team first.
+Force yourself to put the team first.
 
 optional arguments:
   -h, --help            show this help message and exit
