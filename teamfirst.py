@@ -8,7 +8,7 @@ import webbrowser
 API_BASE="https://api.github.com"
 
 def main():
-    parser = argparse.ArgumentParser(description='Team first.')
+    parser = argparse.ArgumentParser(description='Force yourself to put the team first.')
     parser.add_argument('-t', '--token', help='Github oauth token (ie XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)')
     parser.add_argument('-r', '--repo', help='Github repo (ie cbarraford/teamfirst)')
     parser.add_argument('-p', '--participating', help="Only participating github notifications", action='store_true')
