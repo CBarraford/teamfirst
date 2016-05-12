@@ -19,6 +19,7 @@ forces you to not be able to ignore your teammates.
 ## Setup
 1. Goto [github tokens page](https://github.com/settings/tokens), and create a
    new token that only has notifications permissions.
+1. Install [python requests](http://docs.python-requests.org/en/master/)
 1. Create a [git
    hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) (`pre-push` or `pre-commit` are recommended) that runs `teamfirst.py`
 
