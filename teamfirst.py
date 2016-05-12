@@ -12,7 +12,7 @@ def main():
     parser.add_argument('-t', '--token', help='Github oauth token (ie XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX)')
     parser.add_argument('-r', '--repo', help='Github repo (ie cbarraford/teamfirst)')
     parser.add_argument('-p', '--participating', help="Only participating github notifications", action='store_true')
-    parser.add_argument('-o', '--open', help="Launch browser if notifications are waiting", action="store_true")
+    parser.add_argument('-o', '--open', help="Launch browser if there are unread notifications", action="store_true")
     args = parser.parse_args()
 
     # ensure we have a github api token
@@ -41,7 +41,7 @@ def main():
 
     notification_count = len(json)
     if notification_count > 0:
-        print("You have notifications waiting for your attention (%d)" % notification_count)
+        print("You have unread notifications that need your attention (%d)" % notification_count)
         if args.open:
             launch_browser(args)
         sys.exit(1)
